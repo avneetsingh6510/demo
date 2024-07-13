@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fb;
+    color: white;
+}
+
+header {
+    background: #0e2f43;
+    color: #4CAF50;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-decoration: underline solid red 6px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: #0e2f43;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+/* section h2 {
+    color: white;
+    font-size: em;
+    font-weight: bolder;
+} */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #e3f2fb;
+    border: 1px solid #ddd;
+    box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    color: darkblue;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #4CAF50;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-decoration: underline solid red 2px;
+}
+
+.card p{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#targets h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #4CAF50;
+    text-decoration: underline solid red 6px;
+}
+
+#intro h2{
+    font-size: 2.8em;
+    font-weight: bolder;
+    color: #4CAF50;
+    text-decoration: underline solid red 6px;
+}
+
+#intro p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+#actions h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #4CAF50;
+    text-decoration: underline solid red 6px;
+}
+
+#actions p,li{
+    font-size: 1.5em;
+    font-weight: bold;  
+}
+
+#additional-content h2{
+    font-size: 2.5em;
+    font-weight: bold;  
+    color: #4CAF50;
+    text-decoration: underline solid red 6px;
+}
+
+#additional-content p{
+    font-size: 1.5em;
+    font-weight: bold;  
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Space between stacked cards */
+    }
+}
